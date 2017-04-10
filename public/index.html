@@ -10,9 +10,14 @@
 <body>
   <h1 id="title">FreeCodeCamp API Basejump: File Metadata Microservice</h1>
   <p>Submit a file to view its filesize.</p>
-  <input id="upload-input" type="file" />
+
+  <form method="post" enctype="multipart/form-data" action="/upload">
+    <input id="upload-input" type="file" name="upl"/>
+    <input type="submit" />
+  </form>
+
 </body>
 
-<script src="index.js"></script>
+<script src="javascript/index.js"></script>
 
 </html>
